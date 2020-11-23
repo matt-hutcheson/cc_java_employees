@@ -1,6 +1,6 @@
 package staff;
 
-public class Employee {
+public abstract class Employee {
     private String name;
     private String NInumber;
     private double salary;
@@ -37,5 +37,9 @@ public class Employee {
 
     public void raiseSalary(double raisedSalary){
         this.salary += raisedSalary;
+    }
+
+    public double getBonus() {
+        return this.salary * 0.01;
     }
 }
