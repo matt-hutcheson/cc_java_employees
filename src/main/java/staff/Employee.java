@@ -34,4 +34,8 @@ public class Employee {
     public void setSalary(int newSalary) {
         this.salary = newSalary;
     }
+
+    public void raiseSalary(double raisedSalary){
+        this.salary += raisedSalary;
+    }
 }
