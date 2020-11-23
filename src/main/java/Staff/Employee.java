@@ -10,4 +10,12 @@ public class Employee {
         this.NInumber = NInumber;
         this.salary = salary;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
 }
