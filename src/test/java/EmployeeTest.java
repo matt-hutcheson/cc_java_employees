@@ -32,11 +32,16 @@ public class EmployeeTest {
     }
     @Test
     public void hasSalary(){
-        assertEquals(40000, employee.getSalary());
+        assertEquals(40000, employee.getSalary(), 0.01);
     }
     @Test
     public void canSetSalary(){
         employee.setSalary(28000);
-        assertEquals(28000, employee.getSalary());
+        assertEquals(28000, employee.getSalary(), 0.01);
+    }
+    @Test
+    public void canRaiseSalary(){
+        employee.raiseSalary(10000.50);
+        assertEquals(50000.50, employee.getSalary(), 0.01);
     }
 }

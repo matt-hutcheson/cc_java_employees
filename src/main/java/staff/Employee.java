@@ -26,4 +26,12 @@ public class Employee {
     public void setNINumber(String newNI){
         this.NInumber = newNI;
     }
+
+    public double getSalary() {
+        return this.salary;
+    }
+
+    public void setSalary(int newSalary) {
+        this.salary = newSalary;
+    }
 }
