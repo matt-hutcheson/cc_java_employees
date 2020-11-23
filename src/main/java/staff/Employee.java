@@ -18,4 +18,12 @@ public class Employee {
     public void setName(String newName) {
         this.name = newName;
     }
+
+    public String getNINumber(){
+        return this.NInumber;
+    }
+
+    public void setNINumber(String newNI){
+        this.NInumber = newNI;
+    }
 }

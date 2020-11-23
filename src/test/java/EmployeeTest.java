@@ -30,4 +30,13 @@ public class EmployeeTest {
         employee.setNINumber("HG9865539l");
         assertEquals("HG9865539l", employee.getNINumber());
     }
+    @Test
+    public void hasSalary(){
+        assertEquals(40000, employee.getSalary());
+    }
+    @Test
+    public void canSetSalary(){
+        employee.setSalary(28000);
+        assertEquals(28000, employee.getSalary());
+    }
 }
