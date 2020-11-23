@@ -1,4 +1,4 @@
-import Staff.Employee;
+import staff.Employee;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,5 +20,14 @@ public class EmployeeTest {
     public void canSetEmployeeName(){
         employee.setName("Lazy Bob");
         assertEquals("Lazy Bob", employee.getName());
+    }
+    @Test
+    public void hasNINumber(){
+        assertEquals("HG986556K", employee.getNINumber());
+    }
+    @Test
+    public void canSetNINumber(){
+        employee.setNINumber("HG9865539l");
+        assertEquals("HG9865539l", employee.getNINumber());
     }
 }
